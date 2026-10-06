@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+?<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thá»±c Ä‘Æ¡n â€” LYNKCOFFEE</title>
-  <meta name="description" content="Thá»±c Ä‘Æ¡n LYNKCOFFEE: cÃ  phÃª phin, espresso, cold brew, trÃ  trÃ¡i cÃ¢y, nÆ°á»›c Ã©p vÃ  bÃ¡nh ngá»t.">
+  <title>Thực đơn — LYNKCOFFEE</title>
+  <meta name="description" content="Thực đơn LYNKCOFFEE: cà phê phin, espresso, cold brew, trà trái cây, nước ép và bánh ngọt.">
   <link rel="icon" href="images/lynk/logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@700;800&display=swap" rel="stylesheet">
@@ -13,24 +13,24 @@
 <body data-page="menu">
 <main id="main">
   <section class="page-banner"><div class="container">
-    <div class="crumbs"><a href="index.html">Trang chá»§</a> / Thá»±c Ä‘Æ¡n</div>
-    <h1>Thá»±c Ä‘Æ¡n LYNK</h1><p>Chá»n mÃ³n yÃªu thÃ­ch, thÃªm vÃ o giá» vÃ  Ä‘áº·t hÃ ng chá»‰ trong vÃ i giÃ¢y.</p>
+    <div class="crumbs"><a href="index.html">Trang chủ</a> / Thực đơn</div>
+    <h1>Thực đơn LYNK</h1><p>Chọn món yêu thích, thêm vào giỏ và đặt hàng chỉ trong vài giây.</p>
   </div></section>
 
   <section class="section" style="padding-top:50px">
     <div class="container">
       <div class="filter-tabs" id="tabs">
-        <button class="chip active" data-cat="all" type="button">Táº¥t cáº£</button>
-        <button class="chip" data-cat="ca-phe" type="button">CÃ  phÃª</button>
-        <button class="chip" data-cat="hat-ca-phe" type="button">Háº¡t cÃ  phÃª</button>
-        <button class="chip" data-cat="nuoc-trai-cay" type="button">TrÃ  & NÆ°á»›c Ã©p</button>
-        <button class="chip" data-cat="banh-ngot" type="button">BÃ¡nh ngá»t</button>
+        <button class="chip active" data-cat="all" type="button">Tất cả</button>
+        <button class="chip" data-cat="ca-phe" type="button">Cà phê</button>
+        <button class="chip" data-cat="hat-ca-phe" type="button">Hạt cà phê</button>
+        <button class="chip" data-cat="nuoc-trai-cay" type="button">Trà & Nước ép</button>
+        <button class="chip" data-cat="banh-ngot" type="button">Bánh ngọt</button>
       </div>
       <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:34px">
-        <input class="input" id="q" type="search" placeholder="TÃ¬m mÃ³n báº¡n thÃ­châ€¦" style="max-width:360px" aria-label="TÃ¬m mÃ³n">
-        <select class="input" id="sort" style="max-width:240px" aria-label="Sáº¯p xáº¿p">
-          <option value="default">Sáº¯p xáº¿p: Máº·c Ä‘á»‹nh</option><option value="asc">GiÃ¡ tháº¥p â†’ cao</option>
-          <option value="desc">GiÃ¡ cao â†’ tháº¥p</option><option value="rating">ÄÃ¡nh giÃ¡ cao nháº¥t</option>
+        <input class="input" id="q" type="search" placeholder="Tìm món bạn thích…" style="max-width:360px" aria-label="Tìm món">
+        <select class="input" id="sort" style="max-width:240px" aria-label="Sắp xếp">
+          <option value="default">Sắp xếp: Mặc định</option><option value="asc">Giá thấp → cao</option>
+          <option value="desc">Giá cao → thấp</option><option value="rating">Đánh giá cao nhất</option>
         </select>
       </div>
       <p id="count" style="text-align:center;color:var(--muted);margin-bottom:24px"></p>
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cat !== 'all') { const c = D.categories.find((x) => x.slug === cat); if (c) list = list.filter((x) => x.category_id === c.id); }
     if (q) list = list.filter((x) => (x.name + ' ' + x.desc).toLowerCase().includes(q.toLowerCase()));
     if (sort === 'asc') list.sort((a, b) => a.price - b.price); if (sort === 'desc') list.sort((a, b) => b.price - a.price); if (sort === 'rating') list.sort((a, b) => b.rating - a.rating);
-    document.getElementById('count').textContent = list.length + ' mÃ³n';
+    document.getElementById('count').textContent = list.length + ' món';
     const g = document.getElementById('grid');
-    if (!list.length) g.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px 0"><div style="font-size:48px">ðŸ”</div><h3>KhÃ´ng tÃ¬m tháº¥y mÃ³n phÃ¹ há»£p</h3><p style="color:var(--muted)">Thá»­ tá»« khÃ³a khÃ¡c hoáº·c chá»n danh má»¥c khÃ¡c nhÃ©.</p></div>';
+    if (!list.length) g.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px 0"><div style="font-size:48px">🔍</div><h3>Không tìm thấy món phù hợp</h3><p style="color:var(--muted)">Thử từ khóa khác hoặc chọn danh mục khác nhé.</p></div>';
     else L.fillProducts(g, list);
   }
   document.querySelectorAll('#tabs .chip').forEach((b) => { b.classList.toggle('active', b.dataset.cat === cat); b.addEventListener('click', () => { cat = b.dataset.cat; document.querySelectorAll('#tabs .chip').forEach((x) => x.classList.toggle('active', x === b)); render(); }); });
