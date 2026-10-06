@@ -150,15 +150,15 @@
     const order = { code, name: fd.get('name'), phone: fd.get('phone'), address: fd.get('address') || 'Nhận tại quán', items: cart, total, at: new Date().toLocaleString('vi-VN') };
     const all = read(ORDERS_KEY); all.unshift(order); write(ORDERS_KEY, all); localStorage.removeItem(CART_KEY); renderCart(); closeAll();
     modal('okModal', `<div class="modal-box success-box"><div class="big">🎉</div><span class="p-cat">Đặt món thành công</span><h3 style="font-size:30px;margin:6px 0">Cảm ơn bạn!</h3>
-      <p style="color:#6b6b6b">Đơn <b style="color:#B22830">#${code}</b> đã được ghi nhận. Barista đang chuẩn bị thức uống cho bạn.</p>
-      <div class="sum">👤 <b>${esc(order.name)}</b><br>📞 ${esc(order.phone)}<br>💰 Tổng cộng: <b style="color:#B22830">${money(total)}</b> (thanh toán khi nhận)</div>
+      <p style="color:#7a6b5d">Đơn <b style="color:#c49b63">#${code}</b> đã được ghi nhận. Barista đang chuẩn bị thức uống cho bạn.</p>
+      <div class="sum">👤 <b>${esc(order.name)}</b><br>📞 ${esc(order.phone)}<br>💰 Tổng cộng: <b style="color:#c49b63">${money(total)}</b> (thanh toán khi nhận)</div>
       <button class="btn btn-red" data-close type="button">Tiếp tục thưởng thức</button></div>`);
   }
   function submitReservation(fd) {
     const r = Object.fromEntries(fd.entries()); r.at = new Date().toLocaleString('vi-VN');
     const all = read(RES_KEY); all.unshift(r); write(RES_KEY, all);
     modal('resModal', `<div class="modal-box success-box"><div class="big">🗓️</div><span class="p-cat">Đã xác nhận đặt bàn</span><h3 style="font-size:30px;margin:6px 0">Hẹn gặp bạn!</h3>
-      <p style="color:#6b6b6b">Bàn của <b>${esc(r.name)}</b> lúc <b style="color:#B22830">${esc(r.time)}</b> ngày <b>${esc(r.date)}</b> (${esc(r.guests)} khách) đã được giữ.</p>
+      <p style="color:#7a6b5d">Bàn của <b>${esc(r.name)}</b> lúc <b style="color:#c49b63">${esc(r.time)}</b> ngày <b>${esc(r.date)}</b> (${esc(r.guests)} khách) đã được giữ.</p>
       <button class="btn btn-red" style="margin-top:20px" data-close type="button">Hoàn tất</button></div>`);
   }
 
