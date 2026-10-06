@@ -15,7 +15,7 @@
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
   <header class="site-header" id="siteHeader"><div class="container">
     <a class="brand" href="index.html" aria-label="LYNKCOFFEE — Trang chủ">
-      <img src="images/lynk/logo.jpg" alt="Logo LYNKCOFFEE" width="54" height="54">
+      <img src="images/lynk/log_brownie.png" alt="Logo LYNKCOFFEE" width="54" height="54">
       <span class="brand-text"><b>LYNKCOFFEE</b><small>Kết nối từng hương vị</small></span>
     </a>
     <ul class="main-nav" id="mainNav">
@@ -61,7 +61,7 @@
   <footer class="site-footer"><div class="container">
     <div class="footer-grid">
       <div>
-        <div class="foot-brand"><img src="images/lynk/logo.jpg" alt="LYNKCOFFEE" width="56" height="56"><b>LYNKCOFFEE</b></div>
+        <div class="foot-brand"><img src="images/lynk/log_brownie.png" alt="LYNKCOFFEE" width="56" height="56"><b>LYNKCOFFEE</b></div>
         <p>Kết nối từng hương vị — từ nông trại cao nguyên đến tách cà phê của bạn. Rang mộc 100%, pha chế thủ công, phục vụ bằng cả trái tim.</p>
       </div>
       <div><h4>Khám phá</h4><ul>
