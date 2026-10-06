@@ -136,7 +136,8 @@
       bar.style.transition = 'none'; bar.style.width = '0'; void bar.offsetWidth; bar.style.transition = `width ${gap}ms linear`; bar.style.width = '100%';
       clearTimeout(timer); timer = setTimeout(() => go(cur + 1), gap);
     }
-    $('.prev', hero).addEventListener('click', () => go(cur - 1)); $('.next', hero).addEventListener('click', () => go(cur + 1));
+    const prevBtn = $('.prev', hero); if (prevBtn) prevBtn.addEventListener('click', () => go(cur - 1));
+    const nextBtn = $('.next', hero); if (nextBtn) nextBtn.addEventListener('click', () => go(cur + 1));
     ds.forEach((d, i) => d.addEventListener('click', () => go(i)));
     let sx = 0; hero.addEventListener('touchstart', (e) => (sx = e.touches[0].clientX), { passive: true });
     hero.addEventListener('touchend', (e) => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) go(cur + (dx < 0 ? 1 : -1)); });
