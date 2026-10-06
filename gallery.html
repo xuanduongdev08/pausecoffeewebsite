@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KhÃ´ng gian â€” LYNKCOFFEE</title>
+  <meta name="description" content="ThÆ° viá»‡n hÃ¬nh áº£nh khÃ´ng gian, thá»©c uá»‘ng vÃ  bÃ¡nh ngá»t táº¡i LYNKCOFFEE.">
+  <link rel="icon" href="images/lynk/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body data-page="gallery">
+<main id="main">
+  <section class="page-banner"><div class="container">
+    <div class="crumbs"><a href="index.html">Trang chá»§</a> / KhÃ´ng gian</div>
+    <h1>KhÃ´ng gian LYNK</h1><p>GÃ³c nhá» áº¥m cÃºng, thá»©c uá»‘ng Ä‘áº¹p máº¯t vÃ  nhá»¯ng khoáº£nh kháº¯c Ä‘Ã¡ng nhá»›.</p>
+  </div></section>
+  <section class="section" style="padding-top:50px"><div class="container">
+    <div class="filter-tabs" id="tabs">
+      <button class="chip active" data-f="all" type="button">Táº¥t cáº£</button>
+      <button class="chip" data-f="indoor" type="button">KhÃ´ng gian</button>
+      <button class="chip" data-f="coffee" type="button">Thá»©c uá»‘ng</button>
+      <button class="chip" data-f="dessert" type="button">BÃ¡nh ngá»t</button>
+    </div>
+    <div class="gallery-grid" id="grid"></div>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script><script src="js/layout.js?v=2"></script><script src="js/app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const D = window.LYNK_DATA, L = window.Lynk, grid = document.getElementById('grid');
+  function render(f) {
+    const list = f === 'all' ? D.gallery : D.gallery.filter((g) => g.category === f);
+    grid.innerHTML = list.map((g, i) => `<figure class="g-item reveal d${(i % 4) + 1}" data-src="${g.image}" data-t="${L.esc(g.title)}"><img loading="lazy" src="${g.image}" alt="${L.esc(g.title)}"><figcaption>${L.esc(g.title)}</figcaption></figure>`).join('');
+    L.observe(grid);
+  }
+  document.querySelectorAll('#tabs .chip').forEach((b) => b.addEventListener('click', () => { document.querySelectorAll('#tabs .chip').forEach((x) => x.classList.toggle('active', x === b)); render(b.dataset.f); }));
+  grid.addEventListener('click', (e) => { const f = e.target.closest('.g-item'); if (!f) return; L.modal('lbModal', `<div class="modal-box" style="max-width:900px;background:#000"><button class="x-btn" data-close aria-label="ÄÃ³ng">âœ•</button><img src="${f.dataset.src}" alt="${f.dataset.t}" style="width:100%;max-height:78vh;object-fit:contain"><p style="color:#fff;text-align:center;padding:14px;font-weight:700">${f.dataset.t}</p></div>`); });
+  render('all');
+});
+</script>
+</body>
+</html>
+

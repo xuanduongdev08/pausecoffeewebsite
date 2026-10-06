@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiÃªn há»‡ â€” LYNKCOFFEE</title>
+  <meta name="description" content="LiÃªn há»‡ LYNKCOFFEE: Ä‘á»‹a chá»‰ 93 LÃª Cao LÃ£ng, TÃ¢n PhÃº, hotline 0978 853 110.">
+  <link rel="icon" href="images/lynk/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body data-page="contact">
+<main id="main">
+  <section class="page-banner"><div class="container">
+    <div class="crumbs"><a href="index.html">Trang chá»§</a> / LiÃªn há»‡</div>
+    <h1>LiÃªn há»‡ LYNK</h1><p>ChÃºng tÃ´i luÃ´n sáºµn lÃ²ng láº¯ng nghe gÃ³p Ã½ vÃ  chÃ o Ä‘Ã³n báº¡n ghÃ© quÃ¡n.</p>
+  </div></section>
+  <section class="section" style="padding-top:50px"><div class="container">
+    <div class="two-col">
+      <div class="info-list">
+        <div class="info-card reveal left"><span class="ic">ðŸ“</span><div><h4>Äá»‹a chá»‰</h4><p>93 LÃª Cao LÃ£ng, P. PhÃº Tháº¡nh, Q. TÃ¢n PhÃº, TP. Há»“ ChÃ­ Minh</p></div></div>
+        <div class="info-card reveal left d1"><span class="ic">ðŸ“ž</span><div><h4>Hotline</h4><p><b>0978 853 110</b> Â· 07:00 â€“ 22:30 má»—i ngÃ y</p></div></div>
+        <div class="info-card reveal left d2"><span class="ic">âœ‰ï¸</span><div><h4>Email</h4><p>lienhe@lynkcoffee.vn</p></div></div>
+      </div>
+      <form class="form-card reveal right" id="contactForm">
+        <h3 style="font-size:28px;margin-bottom:22px">Gá»­i lá»i nháº¯n</h3>
+        <div class="form-grid">
+          <div class="field"><label for="n">TÃªn cá»§a báº¡n *</label><input class="input" id="n" name="name" required></div>
+          <div class="field"><label for="e">Email *</label><input class="input" id="e" name="email" type="email" required></div>
+          <div class="field full"><label for="s">Chá»§ Ä‘á»</label><select class="input" id="s"><option>GÃ³p Ã½ dá»‹ch vá»¥</option><option>Äáº·t sá»‘ lÆ°á»£ng lá»›n / háº¡t rang</option><option>Há»£p tÃ¡c & sá»± kiá»‡n</option><option>KhÃ¡c</option></select></div>
+          <div class="field full"><label for="m">Ná»™i dung *</label><textarea class="input" id="m" rows="4" required></textarea></div>
+        </div>
+        <button class="btn btn-red" type="submit" style="width:100%">Gá»­i lá»i nháº¯n</button>
+      </form>
+    </div>
+    <div class="map-box reveal">
+      <iframe title="Báº£n Ä‘á»“ LYNKCOFFEE" src="https://www.google.com/maps?q=93+L%C3%AA+Cao+L%C3%A3ng,+Ph%C3%BA+Th%E1%BA%A1nh,+T%C3%A2n+Ph%C3%BA,+H%E1%BB%93+Ch%C3%AD+Minh&output=embed" width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script><script src="js/layout.js?v=2"></script><script src="js/app.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault(); const n = e.target.name.value;
+  window.Lynk.modal('msgModal', `<div class="modal-box success-box"><div class="big">ðŸ’Œ</div><h3 style="font-size:28px;margin:8px 0">Cáº£m Æ¡n ${window.Lynk.esc(n)}!</h3><p style="color:#6b6b6b">LYNKCOFFEE Ä‘Ã£ nháº­n lá»i nháº¯n vÃ  sáº½ pháº£n há»“i sá»›m nháº¥t.</p><button class="btn btn-red" style="margin-top:20px" data-close type="button">ÄÃ³ng</button></div>`);
+  e.target.reset();
+});
+</script>
+</body>
+</html>
+
