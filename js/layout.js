@@ -74,7 +74,7 @@
       <div><h4>Liên hệ</h4>
         <p>📍 93 Lê Cao Lãng, P. Phú Thạnh,<br>Q. Tân Phú, TP. Hồ Chí Minh</p>
         <p style="margin-top:8px">☎ <a href="tel:0345699999">0345 699 999</a></p>
-        <p>✉ lienhe@lynkcoffee.vn</p></div>
+        <p>✉ lienhe@pausecoffee.vn</p></div>
     </div>
     <div class="footer-bottom"><span>© 2026 PAUSE COFFEE. Bảo lưu mọi quyền.</span></div>
   </div></footer>`;

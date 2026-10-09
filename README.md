@@ -1,11 +1,11 @@
-﻿# LYNKCOFFEE — Static Web Storefront
+﻿# PAUSECOFFEE — Static Web Storefront
 
-Website giới thiệu và đặt món trực tuyến thương hiệu LYNKCOFFEE (thiết kế theo phong cách Highlands Coffee).
+Website giới thiệu và đặt món trực tuyến thương hiệu PAUSECOFFEE (thiết kế theo phong cách Highlands Coffee).
 
 ## Cấu trúc thư mục
 - `index.html`: Trang chủ (Hero slider, danh mục, sản phẩm nổi bật, câu chuyện, đánh giá, CTA)
 - `menu.html`: Thực đơn (Bộ lọc danh mục, tìm kiếm, sắp xếp giá/đánh giá)
-- `about.html`: Câu chuyện thương hiệu LYNK
+- `about.html`: Câu chuyện thương hiệu PAUSE
 - `gallery.html`: Không gian quán & Thư viện ảnh (có xem ảnh phóng to Lightbox)
 - `blog.html`: Tin tức & Kiến thức cà phê (đọc bài viết dạng modal)
 - `reservation.html`: Đặt bàn trước trực tuyến
@@ -26,5 +26,5 @@ Website giới thiệu và đặt món trực tuyến thương hiệu LYNKCOFFEE
    Sau đó truy cập: http://127.0.0.1:5500
 
 ## Cách Deploy miễn phí 24/7 lấy link gửi cho bạn / thầy cô
-- **Cách 1 (Netlify Drop - 30 giây có link ngay):** Truy cập https://app.netlify.com/drop và kéo toàn bộ thư mục `lynkcoffeeshop-new` thả vào web.
+- **Cách 1 (Netlify Drop - 30 giây có link ngay):** Truy cập https://app.netlify.com/drop và kéo toàn bộ thư mục `pausecoffeeshop-new` thả vào web.
 - **Cách 2 (Vercel CLI):** Mở terminal tại thư mục này và chạy `npx vercel --prod`.
