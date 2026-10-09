@@ -1,4 +1,4 @@
-/* LYNKCOFFEE — logic phía client (giỏ hàng, quick view, slider, animation). Không cần backend. */
+/* PAUSE COFFEE — logic phía client (giỏ hàng, quick view, slider, animation). Không cần backend. */
 (function () {
   'use strict';
   const D = window.LYNK_DATA;

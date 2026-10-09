@@ -1,4 +1,4 @@
-/* LYNKCOFFEE — dữ liệu tĩnh (thay cho database). Chỉnh sửa tại đây để cập nhật nội dung website. */
+/* PAUSE COFFEE — dữ liệu tĩnh (thay cho database). Chỉnh sửa tại đây để cập nhật nội dung website. */
 (function () {
   const IMG = 'images/';
   const LYNK = 'images/lynk/';
@@ -23,7 +23,7 @@
       desc: 'Espresso, sữa tươi đánh nóng và sốt caramel ngọt dịu rưới thủ công theo từng lớp.', has_size: true, sizes: sz(55000, 65000, 75000) },
     { id: 5, category_id: 1, name: 'Cold Brew Ủ Lạnh 24H', price: 55000, image: IMG + 'menu-6.jpg', badge: 'Đặc biệt', rating: 4.9,
       desc: 'Arabica Cầu Đất ủ lạnh suốt 24 giờ, hương trái cây tự nhiên, thanh tao và ít axit.', has_size: true, sizes: sz(50000, 55000, 65000) },
-    { id: 6, category_id: 1, name: 'Cà Phê Muối Kem Béo', price: 45000, image: LYNK + 'hero-iced.jpg', badge: 'Hot trend', rating: 5.0,
+    { id: 6, category_id: 1, name: 'Cà Phê Muối Kem Dẻo', price: 45000, image: LYNK + 'CAPHEMUOI.jpg', badge: 'Hot trend', rating: 5.0,
       desc: 'Cà phê phin đậm đà phủ lớp kem muối béo mặn bồng bềnh, vị lạ mà nghiện.', has_size: true, sizes: sz(39000, 45000, 52000), pos: '88% 50%' },
     { id: 7, category_id: 2, name: 'Hạt Arabica Cầu Đất 250g', price: 135000, image: IMG + 'menu-5.jpg', badge: 'Thượng hạng', rating: 4.9,
       desc: 'Thu hoạch ở độ cao 1.600m, hương hoa quả phong phú, vị chua thanh thoát và ngọt hậu.', has_size: false },
@@ -55,7 +55,7 @@
     { id: 2, title: 'Từ Cầu Đất đến tách cà phê: hành trình của những hạt mộc', date: '28/09/2026', category: 'Nguồn gốc hạt',
       image: IMG + 'bg_1.jpg',
       excerpt: 'Độ cao 1.600m cùng sương mù quanh năm đã tôi luyện nên hạt Arabica Cầu Đất danh tiếng như thế nào?',
-      content: '<p>Cầu Đất (Đà Lạt) được mệnh danh là thiên đường Arabica của Việt Nam. Đất đỏ bazan màu mỡ và khí hậu mát lạnh tạo điều kiện lý tưởng cho cây cà phê.</p><p>Hạt Arabica Cầu Đất nổi tiếng với vị chua thanh như táo xanh, hương hoa nồng nàn và hậu ngọt kéo dài. LYNKCOFFEE thu mua trực tiếp từ các vườn canh tác thuận tự nhiên.</p>' },
+      content: '<p>Cầu Đất (Đà Lạt) được mệnh danh là thiên đường Arabica của Việt Nam. Đất đỏ bazan màu mỡ và khí hậu mát lạnh tạo điều kiện lý tưởng cho cây cà phê.</p><p>Hạt Arabica Cầu Đất nổi tiếng với vị chua thanh như táo xanh, hương hoa nồng nàn và hậu ngọt kéo dài. PAUSE COFFEE thu mua trực tiếp từ các vườn canh tác thuận tự nhiên.</p>' },
     { id: 3, title: 'Phân biệt Arabica và Robusta: chọn gu cà phê chuẩn vị cho riêng bạn', date: '10/09/2026', category: 'Kiến thức barista',
       image: IMG + 'menu-7.jpg',
       excerpt: 'Bạn thích vị đắng đậm đà của Robusta hay vị chua thanh nhã, thơm nồng của Arabica?',
@@ -76,7 +76,7 @@
   ];
 
   const testimonials = [
-    { name: 'Nguyễn Minh Tuấn', role: 'Giảng viên kiến trúc', text: 'Không gian rất dễ chịu, phin sữa đá ở LYNKCOFFEE có hậu vị ngọt thanh đúng chất rang mộc mà tôi tìm kiếm bấy lâu.' },
+    { name: 'Nguyễn Minh Tuấn', role: 'Giảng viên kiến trúc', text: 'Không gian rất dễ chịu, phin sữa đá ở PAUSE COFFEE có hậu vị ngọt thanh đúng chất rang mộc mà tôi tìm kiếm bấy lâu.' },
     { name: 'Trần Mai Phương', role: 'Food blogger', text: 'Cà phê muối và Tiramisu là combo điểm 10! Nhân viên nhã nhặn, nhạc êm, rất hợp để làm việc hoặc hẹn bạn bè.' },
     { name: 'Lê Hoàng Quân', role: 'Content creator', text: 'Cold Brew ủ 24h thực sự đỉnh, uống vào cảm nhận rõ hương trái cây tự nhiên chứ không hề gắt cổ.' }
   ];

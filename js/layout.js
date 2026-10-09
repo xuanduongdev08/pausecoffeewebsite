@@ -1,4 +1,4 @@
-/* LYNKCOFFEE — Layout dùng chung (header, giỏ hàng, footer) cho mọi trang */
+/* PAUSE COFFEE — Layout dùng chung (header, giỏ hàng, footer) cho mọi trang */
 (function () {
   const page = document.body.dataset.page || '';
   const act = (k) => (page === k ? ' active' : '');
@@ -14,9 +14,9 @@
   const header = `
   <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
   <header class="site-header" id="siteHeader"><div class="container">
-    <a class="brand" href="index.html" aria-label="LYNKCOFFEE — Trang chủ">
-      <img src="images/lynk/log_brownie.png" alt="Logo LYNKCOFFEE" width="54" height="54">
-      <span class="brand-text"><b>LYNKCOFFEE</b><small>Kết nối từng hương vị</small></span>
+    <a class="brand" href="index.html" aria-label="PAUSE COFFEE — Trang chủ">
+      <img src="images/lynk/logo_new.png" alt="Logo PAUSE COFFEE" width="54" height="54">
+      <span class="brand-text"><b>PAUSE COFFEE</b><small>Kết nối từng hương vị</small></span>
     </a>
     <ul class="main-nav" id="mainNav">
       <li><a class="nav-link${act('home')}" href="index.html">Trang chủ</a></li>
@@ -61,7 +61,7 @@
   <footer class="site-footer"><div class="container">
     <div class="footer-grid">
       <div>
-        <div class="foot-brand"><img src="images/lynk/log_brownie.png" alt="LYNKCOFFEE" width="56" height="56"><b>LYNKCOFFEE</b></div>
+        <div class="foot-brand"><img src="images/lynk/logo_new.png" alt="PAUSE COFFEE" width="56" height="56"><b>PAUSE COFFEE</b></div>
         <p>Kết nối từng hương vị — từ nông trại cao nguyên đến tách cà phê của bạn. Rang mộc 100%, pha chế thủ công, phục vụ bằng cả trái tim.</p>
       </div>
       <div><h4>Khám phá</h4><ul>
@@ -73,10 +73,10 @@
         <p style="margin-top:10px"><b style="color:#fff">Thứ 7 & Chủ nhật</b><br>07:00 – 22:30</p></div>
       <div><h4>Liên hệ</h4>
         <p>📍 93 Lê Cao Lãng, P. Phú Thạnh,<br>Q. Tân Phú, TP. Hồ Chí Minh</p>
-        <p style="margin-top:8px">☎ <a href="tel:0978853110">0978 853 110</a></p>
+        <p style="margin-top:8px">☎ <a href="tel:0345699999">0345 699 999</a></p>
         <p>✉ lienhe@lynkcoffee.vn</p></div>
     </div>
-    <div class="footer-bottom"><span>© 2026 LYNKCOFFEE. Bảo lưu mọi quyền.</span></div>
+    <div class="footer-bottom"><span>© 2026 PAUSE COFFEE. Bảo lưu mọi quyền.</span></div>
   </div></footer>`;
 
   document.body.insertAdjacentHTML('afterbegin', header);
